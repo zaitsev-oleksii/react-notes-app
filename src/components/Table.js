@@ -1,10 +1,6 @@
 import TableCell from "./TableCell";
 import TableRow from "./TableRow";
 
-// const getColumnsWidthStyle = (widths) => widths
-//   .map((w) => w.toString() + 'fr')
-//   .join(' ');
-
 const Table = (props) => {
   const data = props.data;
   const config = props.config;
