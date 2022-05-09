@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+.container {
+  width:90%;
+  /* padding: 15px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color:bisque; */
+  box-sizing: border-box;
+}
+
+/*  TABLES  */
+
+.TableBlock{
+  width: 100%;
+}
+
+.NotesTable {
+  width:100%;
+  margin-top: 10px;
+  /* margin:auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 10px;
+}
+
+.SummaryTable {
+  /* width:100%; */
+  width:100%;
+  margin:auto;
+  display: grid;
+  row-gap: 10px;
+  margin-top: 30px;
+}
+
+.NotesTable > .TableHeader,
+.SummaryTable > .TableHeader {
+  /* width:100%; */
+  /* margin:0; */
+  padding:15px;
+  background-color: #92A9BD;
+  color:white;
+  display:grid;
+  /* flex-direction: row; */
+  font-weight: bold;
+  box-shadow:0 2px rgba(0, 0, 0, 0.2);
+  /* justify-content: space-evenly; */
+}
+
+.NotesTable > .TableHeader { grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr; }
+.SummaryTable > .TableHeader { grid-template-columns: 2fr 1fr 1fr; }
+
+.NotesTable > .TableHeader > .TableCell,
+.SummaryTable > .TableHeader > .TableCell {
+  /* margin: 0 7%; */
+  /* width: 16%; */
+  text-align: left;
+  /* flex-basis: fit-content; */
+}
+
+.TableContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap:10px;
+}
+
+.NotesTable > .TableContent > .TableRow,
+.SummaryTable > .TableContent > .TableRow {
+  /* width:100%; */
+  /* margin:15px 0 0 0; */
+  padding:15px;
+  background-color: rgb(228, 235, 234);
+  display:grid;
+  gap:20px;
+}
+
+.NotesTable > .TableContent > .TableRow { grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr; }
+.SummaryTable .TableContent > .TableRow { grid-template-columns: 2fr 1fr 1fr; }
+
+.ButtonsCell {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.TableBlock > .Controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.AddButton, .ToggleViewButton {
+  margin-top: 10px;
+  width:150px;
+  height:30px;
+}
+
+.ToggleViewButton {
+  margin-left:auto;
+  margin-right:0;
+}
+
+.AddForm, .EditForm {
+  width: 100%;
+  height: 300px;
+  padding:10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(205, 205, 205, 0.2);
+}
+
+.AddForm > div,
+.EditForm > div {
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
+}
+
+.AddForm > div > label,
+.EditForm > div > label {
+  width: 100%;
+}
+
+.AddForm > div > input[type=text],
+.EditForm > div > input[type=text] {
+  width: 100%;
+  padding:6px 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.AddForm > div > select,
+.EditForm > div > select {
+  width: 100%;
+  padding:6px 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.AddForm > input[type=submit],
+.EditForm > input[type=submit] {
+  /* padding: 10px; */
+  width: 100%;
+  height: 30px;
+}
+
